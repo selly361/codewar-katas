@@ -11,3 +11,15 @@ Finish the solution so that it returns the sum of all the multiples of 3 or 5 be
 Note: If the number is a multiple of both 3 and 5, only count it once.
 
 
+### Examples
+
+```ts
+sumOfMultiples(10);
+// Should return: 23
+
+sumOfMultiples(15);
+// Should return: 45
+
+sumOfMultiples(2);
+// Should return: 0
+```
