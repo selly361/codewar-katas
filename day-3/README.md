@@ -1,28 +1,31 @@
-# The marketing team is spending way too much time typing in hashtags.
-Let's help them with our own Hashtag Generator!
+# Count the smiley faces!
 
 ## Rank: 6 KYU
 
 ### Description
 
-Here's the deal:
+Given an array (arr) as an argument complete the function countSmileys that should return the total number of smiling faces.
+
+Rules for a smiling face:
 
 
-- It must start with a hashtag (#).
-- All words must have their first letter capitalized.
-- If the final result is longer than 140 chars it must return ```false```.
-- If the input or the result is an empty string it must return ```false```.
+- Each smiley face must contain a valid pair of eyes. Eyes can be marked as ```:``` or ```;```
+- A smiley face can have a nose but it does not have to. Valid characters for a nose are ```-``` or ```~```
+- Every smiling face must have a smiling mouth that should be marked with either ```)``` or ```D```
+
+***Valid smiley face examples:*** ```:) :D ;-D :~)```
+***Invalid smiley faces:*** ```;( :> :} :]```
 
 
+### Example
 
-### Examples
 
-Let's see some cases (input -> output):
+```js
+countSmileys([':)', ';(', ';}', ':-D']);       // should return 2;
 
-```
-" Hello there thanks for trying my Kata"  =>  "#HelloThereThanksForTryingMyKata"
-"    Hello     World   "                  =>  "#HelloWorld"
-""                                        =>  false
+countSmileys([';D', ':-(', ':-)', ';~)']);     // should return 3;
+
+countSmileys([';]', ':[', ';*', ':$', ';-D']); // should return 1;
 ```
 
 
