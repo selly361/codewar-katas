@@ -1,0 +1,4 @@
+// const searchArray = (arrayToSearch, query) => {
+
+    
+// }
